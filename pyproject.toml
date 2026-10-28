@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "outsentimented"
+version = "0.1.0"
+description = "Week 8 project package for financial news sentiment intelligence"
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Muhammad Haris" },
+  { name = "Sobia Rauf" }
+]
+dependencies = []
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/outsentimented"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
